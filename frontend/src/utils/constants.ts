@@ -1,0 +1,32 @@
+import RelayProxyAddress  from '../abi/relayProxyAddress.json'
+
+export const CHAIN_ID = {
+  MAINNET: 1,
+  ROPSTEN: 3,
+  RINKEBY: 4,
+  MATIC: 137,
+};
+
+export const GELATO_LIMIT_ORDERS_MODULE_ADDRESS = {
+  [CHAIN_ID.MAINNET]: '0x037fc8e71445910e1E0bBb2a0896d5e9A7485318',
+  [CHAIN_ID.ROPSTEN]: '0x3f3C13b09B601fb6074124fF8D779d2964caBf8B',
+  [CHAIN_ID.MATIC]: '0x5A36178E38864F5E724A2DaF5f9cD9bA473f7903',
+};
+
+export const DAI_TOKEN_ADDRESS = {
+  [CHAIN_ID.MAINNET]: "0x6b175474e89094c44da98b954eedeac495271d0f",
+  [CHAIN_ID.ROPSTEN]: "0xaD6D458402F60fD3Bd25163575031ACDce07538D",
+  [CHAIN_ID.RINKEBY]: "0xc7AD46e0b8a400Bb3C915120d284AafbA8fc4735",
+  [CHAIN_ID.MATIC]: "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+};
+
+export const RELAYER_SERVER_URL = "http://localhost:4000/limit-order";
+export const RELAYER_PROXY_ADDRESS = RelayProxyAddress.RelayProxyAddress;
+
+export const ETH_ADDRESS = "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE";
+export const DAI_POLYGON_SALT = "0x0000000000000000000000000000000000000000000000000000000000000089";
+export const DAI_POLYGON_NAME = "(PoS) Dai Stablecoin";
+export const DAI_POLYGON_VERSION = "1";
+export const DAI_PERMIT_EXPIRATION = 300;
+
+
