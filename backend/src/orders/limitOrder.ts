@@ -27,13 +27,6 @@ export const limitOrder = async (req: Request, res: Response): Promise<void> => 
     const tx = await relayProxy.limitOrder(signer, amountBn, relayProxyPermit, relayProxyOrder, gas);
     console.log(`Limit order transaction ${tx.hash} submitted: signer ${signer}, amount ${amountBn}`);
 
-    try {
-        await tx.wait();
-        console.log(`Limit order transaction is succeeded`);
-    } catch (e) {
-        console.log(`Limit order transaction is failed`, e);
-    }
-
     res.status(200).json({
         success: true,
         txHash: tx.hash
