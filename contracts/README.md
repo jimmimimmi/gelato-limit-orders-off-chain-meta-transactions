@@ -1,13 +1,5 @@
-# Sample Hardhat Project
+# Relay Proxy contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+#### This project demonstrates a basic evm meta transaction functionality.
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
-```
+RelayProxy smart contract accepts off-chain EIP712 Dai permit and limit order data and then processes them respectively through IERC20OrderRouter.
